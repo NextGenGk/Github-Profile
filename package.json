@@ -1,20 +1,14 @@
 {
-  "name": "code",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "github-profile",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.5.1",
-    "tailwindcss": "^3.4.17"
-  },
-  "dependencies": {
-    "flowbite": "^2.5.2"
+    "vite": "^5.3.1"
   }
 }
