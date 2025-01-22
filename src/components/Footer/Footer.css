@@ -1,0 +1,9 @@
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer span {
+    text-align: center;
+    color: #9198a1;
+}

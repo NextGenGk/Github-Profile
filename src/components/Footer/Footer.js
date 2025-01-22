@@ -1,8 +1,11 @@
 import "./Footer.css"
+import INFO from "../../data/data.js"
 
-const Footer = () => {
+function Footer() {
   document.querySelector(".footer").innerHTML = `
-    
+    <span>
+      © ${new Date().getFullYear()} ${INFO.main.username}. All rights reserved.
+    </span>
   `
 }
 
