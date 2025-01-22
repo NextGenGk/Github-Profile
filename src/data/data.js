@@ -1,6 +1,7 @@
 const userid = "95544839";
-const instagram_username = "nvm_pratyush";
-const facebook_username = "nvmPratyush";
+// use empty string for no username
+const instagram_username = "";
+const facebook_username = "";
 const linkedin_username = "gauravkumar077";
 
 async function fetchGitHubUser(userid) {
@@ -59,17 +60,10 @@ async function fetchGitHubUser(userid) {
             work: [
                 {
                     title: "Wordpress devloper",
-                    company: "Paramount Tech Solutions Pvt. Ltd",
+                    company: "Paramount Tech Solutions",
                     icon: "https://paramounttechnetwork.com/wp-content/uploads/2017/08/cropped-square.png",
                     duration: "2024 - 2024",
                     desc: "Creating Wordpress websites for clients. Working on custom themes and plugins."
-                },
-                {
-                    title: "Web devloper",
-                    company: "Microsoft",
-                    icon: "https://mailmeteor.com/logos/assets/PNG/Microsoft_Logo_512px.png",
-                    duration: "2025 - current",
-                    desc: "Creating Custom websites."
                 }
             ],
             achivments: [
@@ -80,7 +74,7 @@ async function fetchGitHubUser(userid) {
                 },
                 {
                     title: "GitHub Foundations Certification",
-                    icon: "https://blobaccountproduction.blob.core.windows.net/educationwebblobstorage/kicupcaijp0kyzvg9hm3cf4koq78?sp=r&sv=2018-11-09&se=2025-01-22T13%3A55%3A05Z&rscd=inline%3B+filename%3D%22GitHub+Foundations+Badge.png%22%3B+filename*%3DUTF-8%27%27GitHub%2520Foundations%2520Badge.png&rsct=image%2Fpng&sr=b&sig=hfJFIQx%2FQJ5aAK8yYAH6F9z8rSKFkSCxPBL6OgH2Pck%3D",
+                    icon: "https://images.credly.com/images/024d0122-724d-4c5a-bd83-cfe3c4b7a073/twitter_thumb_201604_image.png",
                     url: "https://education.github.com/experiences/foundations_certificate",
                 }
             ]

@@ -10,8 +10,22 @@
 }
 
 body {
-    font-family: "Segoe UI", "Noto Sans", "Roboto", "Open Sans", Helvetica, Arial, sans-serif;
-    background-color: #12161c;
+    font-family: "Noto Sans", "Roboto", "Open Sans", Helvetica, Arial, sans-serif;
+    background-color: #0d1117;
     color: #f0f6fc;
 }
 
+.main {
+    margin: 24px 95px 0 95px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    width: 1133px;
+    flex-direction: row;
+}
+
+.readme {
+    width: 810px;
+}
