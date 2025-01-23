@@ -1,5 +1,4 @@
 const userid = "95544839";
-// use empty string for no username
 const instagram_username = "";
 const facebook_username = "";
 const linkedin_username = "gauravkumar077";
@@ -11,7 +10,6 @@ async function fetchGitHubUser(userid) {
             throw new Error(`GitHub API error: ${response.status}`);
         }
         const ghAPI = await response.json();
-
 
         const INFO = {
             main: {
@@ -30,6 +28,7 @@ async function fetchGitHubUser(userid) {
                 org: ghAPI.company,
                 linkedin_username: linkedin_username,
                 linkedin: `https://www.linkedin.com/in/${linkedin_username}`,
+                Readme: `https://raw.githubusercontent.com/${ghAPI.login}/${ghAPI.login}/refs/heads/main/README.md`,
                 website: ghAPI.blog,
                 followers: ghAPI.followers,
                 following: ghAPI.following,
@@ -79,10 +78,24 @@ async function fetchGitHubUser(userid) {
                 }
             ]
         };
-        console.log(INFO);
+        INFO.main.Readme = await getReadmeContent(INFO);
         return INFO;
     } catch (error) {
         console.error("Error fetching GitHub user:", error);
+    }
+}
+
+async function getReadmeContent(INFO) {
+    try {
+        const response = await fetch(INFO.main.Readme);
+        if (!response.ok) {
+            throw new Error(`Failed to fetch README.md: ${response.status}`);
+        }
+        const readmeContent = await response.text();
+        return readmeContent;
+    } catch (error) {
+        console.error("Error fetching README content:", error);
+        return "";
     }
 }
 

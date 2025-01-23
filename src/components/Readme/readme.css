@@ -1,0 +1,22 @@
+.readme {
+    border-radius: 10px;
+    padding: 24px;
+    border: 0.006rem solid #3d444d;
+    
+}
+
+.readme-header {
+    margin-bottom: 4px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #3d444d;
+    color: #9198a1;
+}
+
+.readme-header p {
+    font-size: 11px;
+    font-family: "IBM Plex Mono", serif
+}
+
+.readme-header span {
+    color: #3d444d;
+}
