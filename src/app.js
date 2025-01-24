@@ -3,6 +3,7 @@ import Footer from "./components/Footer/Footer.js";
 import "./app.css";
 import INFO from "./data/data.js";
 import Profile from "./components/Profile/Profile.js";
+import Readme from "./components/Readme/Readme.js";
 
 document.querySelector("#app").innerHTML = `
     <header class="header"></header>
@@ -19,4 +20,5 @@ document.querySelector("#app").innerHTML = `
 
 NavBar();
 Profile();
+Readme();
 Footer();
